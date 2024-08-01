@@ -31,9 +31,16 @@
   margin: 0px;
   flex-shrink: 0;
   transition: transform 0.3s ease, text-shadow 0.3s ease;
+
+  @media (max-width: 768px) {
+    font-size: 60px;
+  }
 }
 
 .hover-effect:hover {
   transform: scale(1.1);
   /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); */
+  @media (max-width: 768px) {
+    transform: scale(1);
+  }
 }

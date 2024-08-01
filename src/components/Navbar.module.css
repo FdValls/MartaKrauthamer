@@ -12,7 +12,7 @@
   z-index: 1000;
 
   @media (max-width: 768px) {
-    gap: 5px; /* Gap reducido en pantallas más pequeñas */
+    gap: 0px; /* Gap reducido en pantallas más pequeñas */
   }
 }
 

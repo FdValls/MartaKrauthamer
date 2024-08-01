@@ -4,9 +4,13 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 
 export default function ControlledAccordions() {
+  const theme = useTheme();
   const [expanded, setExpanded] = React.useState(false);
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // Ajusta el breakpoint según sea necesario
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -34,7 +38,7 @@ export default function ControlledAccordions() {
           sx={{
             justifyContent: "center", // Centrar horizontalmente el contenido
             "& .MuiAccordionSummary-content": {
-              justifyContent: "center", // Asegurar que el contenido interno esté centrado
+              justifyContent: isMobile ? "flex-start" : "center", // Asegurar que el contenido interno esté centrado
             },
           }}
         >
@@ -92,7 +96,7 @@ export default function ControlledAccordions() {
           sx={{
             justifyContent: "center", // Centrar horizontalmente el contenido
             "& .MuiAccordionSummary-content": {
-              justifyContent: "center", // Asegurar que el contenido interno esté centrado
+              justifyContent: isMobile ? "flex-start" : "center", // Asegurar que el contenido interno esté centrado
             },
           }}
         >
@@ -147,7 +151,7 @@ export default function ControlledAccordions() {
           sx={{
             justifyContent: "center", // Centrar horizontalmente el contenido
             "& .MuiAccordionSummary-content": {
-              justifyContent: "center", // Asegurar que el contenido interno esté centrado
+              justifyContent: isMobile ? "flex-start" : "center", // Asegurar que el contenido interno esté centrado
             },
           }}
         >
@@ -202,7 +206,7 @@ export default function ControlledAccordions() {
           sx={{
             justifyContent: "center", // Centrar horizontalmente el contenido
             "& .MuiAccordionSummary-content": {
-              justifyContent: "center", // Asegurar que el contenido interno esté centrado
+              justifyContent: isMobile ? "flex-start" : "center", // Asegurar que el contenido interno esté centrado
             },
           }}
         >
@@ -253,7 +257,7 @@ export default function ControlledAccordions() {
           sx={{
             justifyContent: "center", // Centrar horizontalmente el contenido
             "& .MuiAccordionSummary-content": {
-              justifyContent: "center", // Asegurar que el contenido interno esté centrado
+              justifyContent: isMobile ? "flex-start" : "center", // Asegurar que el contenido interno esté centrado
             },
           }}
         >
@@ -304,7 +308,7 @@ export default function ControlledAccordions() {
           sx={{
             justifyContent: "center", // Centrar horizontalmente el contenido
             "& .MuiAccordionSummary-content": {
-              justifyContent: "center", // Asegurar que el contenido interno esté centrado
+              justifyContent: isMobile ? "flex-start" : "center", // Asegurar que el contenido interno esté centrado
             },
           }}
         >
