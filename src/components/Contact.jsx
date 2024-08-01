@@ -170,11 +170,11 @@ export default function Contact() {
                 }}
               />
             </div>
-            <ReCAPTCHA
+            {/* <ReCAPTCHA
               style={{ textAlign: "-webkit-center" }}
               sitekey="6LcNdhoqAAAAAGU3D3a-mz9adHYvK_ojpmjMbUto"
               onChange={handleCaptchaChange}
-            />
+            /> */}
             <br />
             <div style={{ textAlign: "center" }}>
               <button
