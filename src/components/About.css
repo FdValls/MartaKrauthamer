@@ -1,0 +1,39 @@
+.formatoContacto {
+  text-align: start;
+  padding: 20px;
+  white-space: break-spaces;
+  display: flex;
+  gap: 5px;
+  font-size: larger;
+  flex-direction: column;
+}
+
+.formatoPerfil {
+  text-align: center;
+  padding: 20px;
+  white-space: break-spaces;
+  display: flex;
+  font-size: larger;
+  gap: 5px;
+  flex-direction: column;
+}
+
+#about .profile-pic {
+  position: relative;
+  margin-top: 60px;
+  width: 265px;
+  height: 305px;
+  border-radius: 100%;
+}
+
+.hover-effect {
+  font-size: 80px;
+  margin: 0px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: scale(1.1);
+  /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); */
+}

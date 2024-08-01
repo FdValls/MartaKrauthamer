@@ -1,0 +1,85 @@
+import Person2Icon from "@mui/icons-material/Person2";
+import EmailIcon from "@mui/icons-material/Email";
+import AssignmentIcon from "@mui/icons-material/Assignment";
+import styles from "./Navbar.module.css";
+import { useState } from "react";
+import { MagicTabSelect } from "react-magic-motion";
+
+const pillTabs = ["Acerca de Mi", "Ejercicio profesional", "Contacto"];
+
+const PillTabs = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(0);
+
+  const handleNavigation = (id) => {
+    console.log(id);
+    switch (id) {
+      case "acerca-de-mi":
+        id = "about";
+        break;
+      case "ejercicio-profesional":
+        id = "Ejercicio profesional";
+        break;
+    }
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.error(`Element with ID '${id}' not found.`);
+    }
+  };
+
+  const tabsComponents = pillTabs.map((text, i) => {
+    const id = text.replace(/\s+/g, "-").toLowerCase();
+    return (
+      <>
+        <button
+          key={text}
+          onMouseEnter={() => setHoveredIndex(i)}
+          onClick={() => handleNavigation(id)}
+          style={{
+            position: "relative",
+            padding: "0.65rem 0.75rem",
+            background: "white",
+            color: "black",
+            border: 0,
+            borderRadius: "999px",
+            display: "flex",
+            flexDirection: "row",
+            gap: "5px",
+          }}
+        >
+          {hoveredIndex === i &&
+            (console.log("index:", i, "hoveredIndex:", hoveredIndex),
+            (
+              <MagicTabSelect
+                id="pillTabs"
+                transition={{ type: "spring", bounce: 0.35 }}
+              >
+                <span
+                  style={{
+                    borderRadius: "999px",
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    zIndex: 10,
+                    background: "white",
+                    mixBlendMode: "difference",
+                  }}
+                />
+              </MagicTabSelect>
+            ))}
+          {i === 0 && <AssignmentIcon />}
+          {i === 1 && <Person2Icon />}
+          {i === 2 && <EmailIcon />}
+          {text}
+        </button>
+      </>
+    );
+  });
+
+  return <div className={styles.navbar}>{tabsComponents}</div>;
+};
+
+export default PillTabs;

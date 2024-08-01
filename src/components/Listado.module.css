@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  place-content: flex-start;
+  text-align: -webkit-center !important;
+  padding: 20px;
+  margin-bottom: -45px;
+}

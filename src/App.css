@@ -1,0 +1,39 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  background: rgb(218, 201, 223);
+  /* padding: 10px; */
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.formatoLista {
+  text-align: start;
+  padding: 20px;
+  white-space: break-spaces;
+  display: flex;
+  font-size: larger;
+  gap: 5px;
+  flex-direction: column;
+}
+
+body,
+html {
+  background-color: rgb(218, 201, 223);
+  font-family: "Open Sans", "sans-serif";
+  color: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  /* min-width: 320px;
+  min-height: 100vh; */
+  width: 100%;
+  /* height: 100vh; */
+  /* background: white; */
+  flex-wrap: wrap;
+}
