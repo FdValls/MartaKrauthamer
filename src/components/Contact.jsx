@@ -154,7 +154,7 @@ export default function Contact() {
             </div>
 
             <div style={{ marginBottom: "10px" }}>
-              <label>Mensaje:</label>
+              <label>Consulta:</label>
               <textarea
                 name="message"
                 value={formData.message}
