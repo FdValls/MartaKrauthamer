@@ -4,11 +4,16 @@ import AssignmentIcon from "@mui/icons-material/Assignment";
 import styles from "./Navbar.module.css";
 import { useState } from "react";
 import { MagicTabSelect } from "react-magic-motion";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
+import MenuPopupState from "../components/utils/Menu";
 
 const pillTabs = ["Acerca de Mi", "Ejercicio profesional", "Contacto"];
 
 const PillTabs = () => {
   const [hoveredIndex, setHoveredIndex] = useState(0);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // Ajusta el breakpoint según sea necesario
 
   const handleNavigation = (id) => {
     console.log(id);
@@ -27,6 +32,17 @@ const PillTabs = () => {
       console.error(`Element with ID '${id}' not found.`);
     }
   };
+
+  if (isMobile) {
+    return (
+      <MenuPopupState
+        onNavigate={(id) => {
+          const adjustedId = id.replace(/\s+/g, "-").toLowerCase();
+          handleNavigation(adjustedId);
+        }}
+      />
+    );
+  }
 
   const tabsComponents = pillTabs.map((text, i) => {
     const id = text.replace(/\s+/g, "-").toLowerCase();
