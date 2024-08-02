@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+// eslint-disable-next-line no-unused-vars
 import * as React from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
@@ -14,19 +15,19 @@ const MenuPopupState = ({ onNavigate }) => {
             variant="contained"
             {...bindTrigger(popupState)}
             sx={{
-              position: "fixed", // Fijar el botón para que siempre esté visible
-              top: "20px", // Posicionarlo a 20px del borde superior
-              left: "50%", // Centrar horizontalmente
+              position: "fixed",
+              top: "20px",
+              left: "50%",
               color: "black",
-              transform: "translateX(-50%)", // Ajustar la posición para centrarlo
-              backgroundColor: "rgba(255, 255, 255, 0.8)", // Fondo claro con transparencia
-              zIndex: 1000, // Asegurarse de que esté sobre otros elementos
-              transition: "background-color 0.3s ease, color 0.3s ease", // Suavizar la transición de color
+              transform: "translateX(-50%)",
+              backgroundColor: "rgba(255, 255, 255, 0.8)",
+              zIndex: 1000, //
+              transition: "background-color 0.3s ease, color 0.3s ease",
               "&:hover": {
-                backgroundColor: "rgba(255, 255, 255, 1)", // Fondo sólido al pasar el mouse
-                color: "black", // Cambiar el color del texto al pasar el mouse
+                backgroundColor: "rgba(255, 255, 255, 1)",
+                color: "black",
               },
-              pointerEvents: "auto", // Asegura que el botón sea clicable en todo momento
+              pointerEvents: "auto",
             }}
           >
             Menu

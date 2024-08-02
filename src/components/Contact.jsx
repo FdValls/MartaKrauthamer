@@ -26,16 +26,12 @@ export default function Contact() {
   };
 
   const handleCaptchaChange = (value) => {
-    console.log("Captcha value:", value);
     setGetCaptcha(value);
-    console.log("Usuario verificado");
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (getCaptcha) {
-      console.log("Captcha verificado");
-      console.log(formData);
       setSubmitted(true);
     } else {
       alert("Por favor, verifica el captcha");
@@ -106,7 +102,6 @@ export default function Contact() {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                required
                 style={{
                   width: "100%",
                   padding: "8px",
@@ -170,11 +165,11 @@ export default function Contact() {
                 }}
               />
             </div>
-            {/* <ReCAPTCHA
+            <ReCAPTCHA
               style={{ textAlign: "-webkit-center" }}
-              sitekey="6LcNdhoqAAAAAGU3D3a-mz9adHYvK_ojpmjMbUto"
+              sitekey={import.meta.env.VITE_SITE_KEY_RECAPTCHA}
               onChange={handleCaptchaChange}
-            /> */}
+            />
             <br />
             <div style={{ textAlign: "center" }}>
               <button

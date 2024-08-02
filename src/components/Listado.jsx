@@ -22,16 +22,18 @@ export default function Listado() {
       >
         <div className={styles.container}>
           <AssignmentIcon style={{ fontSize: "28px" }} />
-          <h2
-            style={{
-              fontFamily: "'Open Sans', sans-serif",
-              fontSize: "28px",
-              textAlign: "start",
-              padding: "20px",
-            }}
-          >
-            Ejercicio profesional
-          </h2>
+          <div>
+            <h2
+              style={{
+                fontFamily: "'Open Sans', sans-serif",
+                fontSize: "28px",
+                textAlign: "start",
+                padding: "20px",
+              }}
+            >
+              Ejercicio profesional
+            </h2>
+          </div>
         </div>
         <Accordion />
       </article>

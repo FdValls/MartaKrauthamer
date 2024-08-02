@@ -10,7 +10,7 @@ import { useTheme } from "@mui/material/styles";
 export default function ControlledAccordions() {
   const theme = useTheme();
   const [expanded, setExpanded] = React.useState(false);
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // Ajusta el breakpoint según sea necesario
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -36,9 +36,9 @@ export default function ControlledAccordions() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
           sx={{
-            justifyContent: "center", // Centrar horizontalmente el contenido
+            justifyContent: "center",
             "& .MuiAccordionSummary-content": {
-              justifyContent: isMobile ? "flex-start" : "center", // Asegurar que el contenido interno esté centrado
+              justifyContent: isMobile ? "flex-start" : "center",
             },
           }}
         >
@@ -49,10 +49,10 @@ export default function ControlledAccordions() {
               color: "black",
               fontFamily: "'Open Sans', sans-serif",
               fontSize: "22px",
-              transition: "transform 0.3s ease, text-shadow 0.3s ease", // Suavizar la transición
+              transition: "transform 0.3s ease, text-shadow 0.3s ease",
               "&:hover": {
-                transform: "scale(1.1)", // Aumentar tamaño al pasar el mouse
-                textShadow: "0 0 10px rgba(255, 255, 255, 0.8)", // Sombra blanca sutil
+                transform: "scale(1.1)",
+                textShadow: "0 0 10px rgba(255, 255, 255, 0.8)",
               },
             }}
           >
@@ -94,9 +94,9 @@ export default function ControlledAccordions() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
           sx={{
-            justifyContent: "center", // Centrar horizontalmente el contenido
+            justifyContent: "center",
             "& .MuiAccordionSummary-content": {
-              justifyContent: isMobile ? "flex-start" : "center", // Asegurar que el contenido interno esté centrado
+              justifyContent: isMobile ? "flex-start" : "center",
             },
           }}
         >
@@ -106,10 +106,10 @@ export default function ControlledAccordions() {
               flexShrink: 0,
               fontFamily: "'Open Sans', sans-serif",
               fontSize: "22px",
-              transition: "transform 0.3s ease, text-shadow 0.3s ease", // Suavizar la transición
+              transition: "transform 0.3s ease, text-shadow 0.3s ease",
               "&:hover": {
-                transform: "scale(1.1)", // Aumentar tamaño al pasar el mouse
-                textShadow: "0 0 10px rgba(255, 255, 255, 0.8)", // Sombra blanca sutil
+                transform: "scale(1.1)",
+                textShadow: "0 0 10px rgba(255, 255, 255, 0.8)",
               },
             }}
           >
@@ -149,9 +149,9 @@ export default function ControlledAccordions() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
           sx={{
-            justifyContent: "center", // Centrar horizontalmente el contenido
+            justifyContent: "center",
             "& .MuiAccordionSummary-content": {
-              justifyContent: isMobile ? "flex-start" : "center", // Asegurar que el contenido interno esté centrado
+              justifyContent: isMobile ? "flex-start" : "center",
             },
           }}
         >
@@ -161,10 +161,10 @@ export default function ControlledAccordions() {
               flexShrink: 0,
               fontFamily: "'Open Sans', sans-serif",
               fontSize: "22px",
-              transition: "transform 0.3s ease, text-shadow 0.3s ease", // Suavizar la transición
+              transition: "transform 0.3s ease, text-shadow 0.3s ease",
               "&:hover": {
-                transform: "scale(1.1)", // Aumentar tamaño al pasar el mouse
-                textShadow: "0 0 10px rgba(255, 255, 255, 0.8)", // Sombra blanca sutil
+                transform: "scale(1.1)",
+                textShadow: "0 0 10px rgba(255, 255, 255, 0.8)",
               },
             }}
           >
@@ -204,9 +204,9 @@ export default function ControlledAccordions() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
           sx={{
-            justifyContent: "center", // Centrar horizontalmente el contenido
+            justifyContent: "center",
             "& .MuiAccordionSummary-content": {
-              justifyContent: isMobile ? "flex-start" : "center", // Asegurar que el contenido interno esté centrado
+              justifyContent: isMobile ? "flex-start" : "center",
             },
           }}
         >
@@ -216,10 +216,10 @@ export default function ControlledAccordions() {
               flexShrink: 0,
               fontFamily: "'Open Sans', sans-serif",
               fontSize: "22px",
-              transition: "transform 0.3s ease, text-shadow 0.3s ease", // Suavizar la transición
+              transition: "transform 0.3s ease, text-shadow 0.3s ease",
               "&:hover": {
-                transform: "scale(1.1)", // Aumentar tamaño al pasar el mouse
-                textShadow: "0 0 10px rgba(255, 255, 255, 0.8)", // Sombra blanca sutil
+                transform: "scale(1.1)",
+                textShadow: "0 0 10px rgba(255, 255, 255, 0.8)",
               },
             }}
           >
@@ -255,9 +255,9 @@ export default function ControlledAccordions() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
           sx={{
-            justifyContent: "center", // Centrar horizontalmente el contenido
+            justifyContent: "center",
             "& .MuiAccordionSummary-content": {
-              justifyContent: isMobile ? "flex-start" : "center", // Asegurar que el contenido interno esté centrado
+              justifyContent: isMobile ? "flex-start" : "center",
             },
           }}
         >
@@ -267,10 +267,10 @@ export default function ControlledAccordions() {
               flexShrink: 0,
               fontFamily: "'Open Sans', sans-serif",
               fontSize: "22px",
-              transition: "transform 0.3s ease, text-shadow 0.3s ease", // Suavizar la transición
+              transition: "transform 0.3s ease, text-shadow 0.3s ease",
               "&:hover": {
-                transform: "scale(1.1)", // Aumentar tamaño al pasar el mouse
-                textShadow: "0 0 10px rgba(255, 255, 255, 0.8)", // Sombra blanca sutil
+                transform: "scale(1.1)",
+                textShadow: "0 0 10px rgba(255, 255, 255, 0.8)",
               },
             }}
           >
@@ -306,9 +306,9 @@ export default function ControlledAccordions() {
           aria-controls="panel3bh-content"
           id="panel6bh-header"
           sx={{
-            justifyContent: "center", // Centrar horizontalmente el contenido
+            justifyContent: "center",
             "& .MuiAccordionSummary-content": {
-              justifyContent: isMobile ? "flex-start" : "center", // Asegurar que el contenido interno esté centrado
+              justifyContent: isMobile ? "flex-start" : "center",
             },
           }}
         >
@@ -317,10 +317,10 @@ export default function ControlledAccordions() {
               width: "33%",
               flexShrink: 0,
               fontSize: "22px",
-              transition: "transform 0.3s ease, text-shadow 0.3s ease", // Suavizar la transición
+              transition: "transform 0.3s ease, text-shadow 0.3s ease",
               "&:hover": {
-                transform: "scale(1.1)", // Aumentar tamaño al pasar el mouse
-                textShadow: "0 0 10px rgba(255, 255, 255, 0.8)", // Sombra blanca sutil
+                transform: "scale(1.1)",
+                textShadow: "0 0 10px rgba(255, 255, 255, 0.8)",
               },
             }}
           >
