@@ -8,7 +8,11 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import MenuPopupState from "../components/utils/Menu";
 
-const pillTabs = ["Acerca de Mi", "Ejercicio profesional", "Contacto"];
+const pillTabs = [
+  "Acerca de Mi",
+  "Soluciones centradas en empresas y personas",
+  "Contacto",
+];
 
 const PillTabs = () => {
   const [hoveredIndex, setHoveredIndex] = useState(0);
@@ -21,7 +25,7 @@ const PillTabs = () => {
       case "acerca-de-mi":
         id = "about";
         break;
-      case "ejercicio-profesional":
+      case "soluciones-centradas-en-empresas-y-personas":
         id = "Ejercicio profesional";
         break;
     }

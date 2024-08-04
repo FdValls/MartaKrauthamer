@@ -43,11 +43,11 @@ const MenuPopupState = ({ onNavigate }) => {
             </MenuItem>
             <MenuItem
               onClick={() => {
-                onNavigate("ejercicio-profesional");
+                onNavigate("Soluciones centradas en empresas y personas");
                 popupState.close();
               }}
             >
-              Ejercicio Profesional
+              Soluciones centradas en empresas y personas
             </MenuItem>
             <MenuItem
               onClick={() => {

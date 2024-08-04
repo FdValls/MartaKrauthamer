@@ -27,18 +27,19 @@
 }
 
 .hover-effect {
-  font-size: 80px;
+  font-size: 65px;
   margin: 0px;
   flex-shrink: 0;
-  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  font-family: initial;
+  /* transition: transform 0.3s ease, text-shadow 0.3s ease;
 
   @media (max-width: 768px) {
     font-size: 60px;
-  }
+  } */
 }
 
 .hover-effect:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); */
   @media (max-width: 768px) {
     transform: scale(1);

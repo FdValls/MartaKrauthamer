@@ -31,7 +31,7 @@ export default function Listado() {
                 padding: "20px",
               }}
             >
-              Ejercicio profesional
+              Soluciones centradas en empresas y personas
             </h2>
           </div>
         </div>

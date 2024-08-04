@@ -123,7 +123,7 @@ export default function ControlledAccordions() {
               fontSize: "19px",
             }}
           >
-            Este programa está diseñado para maximizar el desempeño de
+            Este programa está diseñado para maximizar el desempeño del
             participante mediante el desarrollo de sus habilidades y
             competencias. A través de encuentros individuales se trabaja para
             identificar áreas de mejora, establecer metas claras y fomentar un
@@ -289,7 +289,7 @@ export default function ControlledAccordions() {
             especialmente diseñados se los ayuda a profundizar en su
             autoconocimiento, explorar intereses, valores, oferta del mercado
             para poder tomar una decisión bien informada sobre su plan de
-            carrera
+            carrera.
           </Typography>
         </AccordionDetails>
       </Accordion>
