@@ -20,7 +20,6 @@ const PillTabs = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // Ajusta el breakpoint según sea necesario
 
   const handleNavigation = (id) => {
-    console.log(id);
     switch (id) {
       case "acerca-de-mi":
         id = "about";
@@ -68,28 +67,26 @@ const PillTabs = () => {
             gap: "5px",
           }}
         >
-          {hoveredIndex === i &&
-            (console.log("index:", i, "hoveredIndex:", hoveredIndex),
-            (
-              <MagicTabSelect
-                id="pillTabs"
-                transition={{ type: "spring", bounce: 0.35 }}
-              >
-                <span
-                  style={{
-                    borderRadius: "999px",
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    zIndex: 10,
-                    background: "white",
-                    mixBlendMode: "difference",
-                  }}
-                />
-              </MagicTabSelect>
-            ))}
+          {hoveredIndex === i && (
+            <MagicTabSelect
+              id="pillTabs"
+              transition={{ type: "spring", bounce: 0.35 }}
+            >
+              <span
+                style={{
+                  borderRadius: "999px",
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  zIndex: 10,
+                  background: "white",
+                  mixBlendMode: "difference",
+                }}
+              />
+            </MagicTabSelect>
+          )}
           {i === 0 && <AssignmentIcon />}
           {i === 1 && <Person2Icon />}
           {i === 2 && <EmailIcon />}
