@@ -1,25 +1,21 @@
 {
   "main": {
     "name": "Marta Krauthamer",
-    "description": "I am a web development engineer and I use react and vue.js to develop pages. This project is a resume template that can be used as the project home page or resume page",
     "image": "fotomarta.jpeg",
-    "bio": "Lic. En Psicología de la UBA con Postgrado en Psicología Laboral (APBA). Consultora especializada en Outplacement, Coaching Ejecutivo y Transiciones de Carrera.\nEspecialista en Técnicas de Evaluación, programas de Orientación Vocacional y Salud Laboral. Psicoterapia de para adultos.\n\nOrientada a brindar servicios personalizados y de calidad para impulsar el crecimiento y el desarrollo de las organizaciones.\nHe participado en proyectos de evaluación y desarrollo del capital humano en Argentina, Uruguay y Brasil. Escribí diversos artículos referidos a los temas propios a mi área de expertise.\n\nEstoy comprometida en ayudar a las organizaciones a alcanzar sus objetivos y maximizar el potencial de su capital humano. Mis servicios de consultoría en recursos humanos se centran en proporcionar soluciones estratégicas adaptadas a las necesidades únicas de cada organización.",
-    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555"
+    "bio": "Lic. En Psicología de la UBA con Postgrado en Psicología Laboral (APBA). Formación en Coaching Ejecutivo. Orientada a brindar servicios personalizados y de calidad para impulsar el crecimiento y el desarrollo de las organizaciones y las personas. Todos los procesos se pueden realizar en modalidad virtual o presencial."
   },
   "items": [
     {
       "title": "Outplacement",
-      "description": "En un contexto empresarial cambiante como el actual, en donde las fusiones y reestructuraciones pueden exigir desvinculaciones, el programa de outplacement “humaniza” estos procesos minimizando el impacto psicológico producido por la pérdida del trabajo y ayuda a las personas a reorientar su carrera rápidamente y en las mejores condiciones posibles. Asimismo cuida la marca empresaria y preserva el compromiso de quienes continúan en la organización. El proceso consta de un conjunto de estrategias y técnicas que facilitan la reinserción de quienes son desvinculados de la empresa. Ofrece el asesoramiento, la formación y los medios necesarios para la nueva transición de carrera. Puede ser individual o grupal y finaliza cuando el candidato alcanza su recolocación."
+      "description": "En un contexto empresarial cambiante como el actual, en donde las fusiones y reestructuraciones pueden exigir desvinculaciones, el programa de outplacement “humaniza” estos procesos minimizando el impacto psicológico producido por la pérdida del trabajo y ayuda a las personas a reorientar su carrera rápidamente y en las mejores condiciones posibles. Asimismo cuida la marca empresaria y preserva el compromiso de quienes continúan en la organización.El proceso consta de un conjunto de estrategias y técnicas que facilitan la reinserción de quienes son desvinculados de la empresa. Ofrece el asesoramiento, la formación y los medios necesarios para la nueva transición de carrera. Puede ser individual o grupal y finaliza cuando el candidato alcanza su recolocación."
     },
     {
       "title": "Coaching",
-      "description": "Este programa está diseñado para maximizar el desempeño de participante mediante el desarrollo de sus habilidades y competencias. A través de encuentros individuales se trabaja para identificar áreas de mejora, establecer metas claras y fomentar un crecimiento personal y profesional que sea sostenible en el tiempo. El objetivo es ayudar a las personas a comprender qué deben cambiar para alcanzar sus metas.El programa cuenta con una duración determinada y se tratan cuestiones específicas destinadas a facilitar la transformación personal. El coaching indaga en el presente para orientarse luego hacia el futuro."
+      "description": "Este programa está diseñado para maximizar el desempeño del participante mediante el desarrollo de sus habilidades y competencias. A través de encuentros individuales se trabaja para identificar áreas de mejora, establecer metas claras y fomentar un crecimiento personal y profesional que sea sostenible en el tiempo. El objetivo es ayudar a las personas a comprender qué deben cambiar para alcanzar sus metas.El programa cuenta con una duración determinada y se tratan cuestiones específicas destinadas a facilitar la transformación personal. El coaching indaga en el presente para orientarse luego hacia el futuro."
     },
     {
       "title": "Programa de Retiro",
-      "description": "Este programa está diseñado para maximizar el desempeño de participante mediante el desarrollo de sus habilidades y competencias. A través de encuentros individuales se trabaja para identificar áreas de mejora, establecer metas claras y fomentar un crecimiento personal y profesional que sea sostenible en el tiempo. El objetivo es ayudar a las personas a comprender qué deben cambiar para alcanzar sus metas. El programa cuenta con una duración determinada y se tratan cuestiones específicas destinadas a facilitar la transformación personal. El coaching indaga en el presente para orientarse luego hacia el futuro."
+      "description": "Este programa invita a las personas en situación de “retiro laboral” a afrontar la nueva realidad como una oportunidad de cambio y crecimiento.Su objetivo es ofrecer una salida cuidada contribuyendo en el armado de un proyecto personal que sea afín a sus intereses, capacidades y experiencia. Se buscan vocaciones dormidas, aprendizajes postergados y todo lo que pueda contribuir a la reconversión de la identidad y la autoestima. Se preserva un rol activo buscando actividades/proyectos que necesiten de los conocimientos y habilidades de la persona y que a su vez estén en sintonía con su situación presente."
     },
     {
       "title": "Evaluaciones psicotécnicas y de potencial",
@@ -31,7 +27,13 @@
     },
     {
       "title": "Psicoterapia Individual",
-      "description": "Un espacio interpersonal de escucha y empatía destinado a mejorar la calidad de vida de las personas, con un enfoque personalizado y adecuado a las necesidades individuales. "
+      "description": "Un espacio interpersonal de escucha y empatía destinado a mejorar la calidad de vida de las personas, con un enfoque personalizado y adecuado a las necesidades individuales."
     }
-  ]
+  ],
+  "footer":
+    {
+      "name": "Fernando Valls",
+      "description": "Todos los derechos reservados."
+    }
+  
 }

@@ -5,7 +5,7 @@ export default function Header() {
   const data = useContext(DataContext);
 
   if (!data || !data.items) {
-    return <p>Loading...</p>; // O algún otro contenido de carga
+    return <p>Loading...</p>;
   }
 
   return (

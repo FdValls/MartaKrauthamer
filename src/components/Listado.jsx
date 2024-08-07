@@ -35,7 +35,7 @@ export default function Listado() {
             </h2>
           </div>
         </div>
-        <Accordion />
+        <Accordion value={data} />
       </article>
     </section>
   );

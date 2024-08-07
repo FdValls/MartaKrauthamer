@@ -1,6 +1,14 @@
 import { MDBFooter } from "mdb-react-ui-kit";
+import { useContext } from "react";
+import { DataContext } from "../Context/DataContext";
 
 export default function App() {
+  const data = useContext(DataContext);
+
+  if (!data || !data.items) {
+    return <p>Loading...</p>;
+  }
+
   return (
     <MDBFooter bgColor="light" className="text-center text-lg-left">
       <div
@@ -13,7 +21,7 @@ export default function App() {
         }}
       >
         &copy; {new Date().getFullYear()} Desing:{" "}
-        <a className="text-dark">Fernando Valls </a>
+        <a className="text-dark">{data.footer.name}</a>
       </div>
     </MDBFooter>
   );

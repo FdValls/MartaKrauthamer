@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import * as React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -7,10 +8,12 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 
-export default function ControlledAccordions() {
+export default function ControlledAccordions({ value }) {
   const theme = useTheme();
   const [expanded, setExpanded] = React.useState(false);
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const items = value.items;
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -56,7 +59,7 @@ export default function ControlledAccordions() {
               },
             }}
           >
-            Outplacement
+            {items[0].title}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -66,18 +69,7 @@ export default function ControlledAccordions() {
               fontSize: "19px",
             }}
           >
-            En un contexto empresarial cambiante como el actual, en donde las
-            fusiones y reestructuraciones pueden exigir desvinculaciones, el
-            programa de outplacement “humaniza” estos procesos minimizando el
-            impacto psicológico producido por la pérdida del trabajo y ayuda a
-            las personas a reorientar su carrera rápidamente y en las mejores
-            condiciones posibles. Asimismo cuida la marca empresaria y preserva
-            el compromiso de quienes continúan en la organización.El proceso
-            consta de un conjunto de estrategias y técnicas que facilitan la
-            reinserción de quienes son desvinculados de la empresa. Ofrece el
-            asesoramiento, la formación y los medios necesarios para la nueva
-            transición de carrera. Puede ser individual o grupal y finaliza
-            cuando el candidato alcanza su recolocación.
+            {items[0].description}
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -113,7 +105,7 @@ export default function ControlledAccordions() {
               },
             }}
           >
-            Coaching
+            {items[1].title}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -123,16 +115,7 @@ export default function ControlledAccordions() {
               fontSize: "19px",
             }}
           >
-            Este programa está diseñado para maximizar el desempeño del
-            participante mediante el desarrollo de sus habilidades y
-            competencias. A través de encuentros individuales se trabaja para
-            identificar áreas de mejora, establecer metas claras y fomentar un
-            crecimiento personal y profesional que sea sostenible en el tiempo.
-            El objetivo es ayudar a las personas a comprender qué deben cambiar
-            para alcanzar sus metas.El programa cuenta con una duración
-            determinada y se tratan cuestiones específicas destinadas a
-            facilitar la transformación personal. El coaching indaga en el
-            presente para orientarse luego hacia el futuro.
+            {items[1].description}
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -168,7 +151,7 @@ export default function ControlledAccordions() {
               },
             }}
           >
-            Programa de Retiro
+            {items[2].title}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -178,16 +161,7 @@ export default function ControlledAccordions() {
               fontSize: "19px",
             }}
           >
-            Este programa invita a las personas en situación de “retiro laboral”
-            a afrontar la nueva realidad como una oportunidad de cambio y
-            crecimiento.Su objetivo es ofrecer una salida cuidada contribuyendo
-            en el armado de un proyecto personal que sea afín a sus intereses,
-            capacidades y experiencia. Se buscan vocaciones dormidas,
-            aprendizajes postergados y todo lo que pueda contribuir a la
-            reconversión de la identidad y la autoestima. Se preserva un rol
-            activo buscando actividades/proyectos que necesiten de los
-            conocimientos y habilidades de la persona y que a su vez estén en
-            sintonía con su situación presente.
+            {items[2].description}
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -223,7 +197,7 @@ export default function ControlledAccordions() {
               },
             }}
           >
-            Evaluaciones psicotécnicas y de potencial
+            {items[3].title}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -233,12 +207,7 @@ export default function ControlledAccordions() {
               fontSize: "19px",
             }}
           >
-            Mediante una amplia gama de técnicas de evaluación se identifica la
-            presencia y el nivel de desarrollo de las habilidades, competencias
-            y aptitudes de los candidatos respecto de los requerimientos del
-            puesto. El análisis posterior de la información obtenida permite
-            tomar decisiones basadas en información objetiva así como también
-            efectuar hipótesis sobre comportamientos y desempeño futuros.
+            {items[3].description}
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -274,7 +243,7 @@ export default function ControlledAccordions() {
               },
             }}
           >
-            Orientación Vocacional
+            {items[4].title}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -284,12 +253,7 @@ export default function ControlledAccordions() {
               fontSize: "19px",
             }}
           >
-            Es un servicio orientado a jóvenes para descubrir y desarrollar su
-            camino profesional ideal. Mediante ejercicios y pruebas
-            especialmente diseñados se los ayuda a profundizar en su
-            autoconocimiento, explorar intereses, valores, oferta del mercado
-            para poder tomar una decisión bien informada sobre su plan de
-            carrera.
+            {items[4].description}
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -324,7 +288,7 @@ export default function ControlledAccordions() {
               },
             }}
           >
-            Psicoterapia Individual
+            {items[5].title}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -334,9 +298,7 @@ export default function ControlledAccordions() {
               fontSize: "19px",
             }}
           >
-            Un espacio interpersonal de escucha y empatía destinado a mejorar la
-            calidad de vida de las personas, con un enfoque personalizado y
-            adecuado a las necesidades individuales.
+            {items[5].description}
           </Typography>
         </AccordionDetails>
       </Accordion>

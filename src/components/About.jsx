@@ -1,21 +1,14 @@
 import "./About.css";
+import { useContext } from "react";
 import SizeAvatars from "./utils/Avatar";
+import { DataContext } from "../Context/DataContext";
 
 export default function About() {
-  // const data = useContext(DataContext);
-  // const [imagen, setImagen] = useState("");
+  const data = useContext(DataContext);
 
-  // useEffect(() => {
-  //   if (data) {
-  //     setImagen(`/images/${data.main.image}`);
-  //   }
-  // }, [data]);
-
-  // console.log("imagen", imagen);
-
-  // if (!data) {
-  //   return <div>Loading...</div>;
-  // }
+  if (!data) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
@@ -25,16 +18,10 @@ export default function About() {
             <SizeAvatars />
           </div>
           <div>
-            <h2 className="hover-effect">Marta Krauthamer </h2>
+            <h2 className="hover-effect">{data.main.name}</h2>
           </div>
           <div className="formatoPerfil">
-            <p>
-              Lic. En Psicología de la UBA con Postgrado en Psicología Laboral
-              (APBA). Formación en Coaching Ejecutivo. Orientada a brindar
-              servicios personalizados y de calidad para impulsar el crecimiento
-              y el desarrollo de las organizaciones y las personas. Todos los
-              procesos se pueden realizar en modalidad virtual o presencial.
-            </p>
+            <p>{data.main.bio}</p>
             <div className="row"></div>
           </div>
         </div>
